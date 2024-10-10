@@ -13,23 +13,23 @@ async function main() {
     const [deployer] = await ethers.getSigners();
     const carNft = await ethers.getContractAt("DynamicNFTCar", deployer);
     const carNftContract = carNft.attach(
-        "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9" // The deployed contract address
+        "" // The deployed contract address
     );
     
     const priceConsumerV3 = await ethers.getContractAt("PriceConsumerV3", deployer);
     const priceConsumerV3Contract= priceConsumerV3.attach(
-        "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512" // The deployed contract address
+        "" // The deployed contract address
     );
 
     /*const priceConverter = await ethers.getContractAt("PriceConsumerV3", deployer);
     const priceConverterContract = priceConverter.attach(
-        "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0" // The deployed contract address
+        "" // The deployed contract address
     );*/
 
    
     const market = await ethers.getContractAt("CarMarket", deployer);
     const marketContract = market.attach(
-        "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9" // The deployed contract address
+        "" // The deployed contract address
     );
 
 
